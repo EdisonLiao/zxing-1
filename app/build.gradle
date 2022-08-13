@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion compile_sdk_version
     defaultConfig {
-        applicationId "com.yzq.zxing"
+        applicationId "com.edison.qrcodes"
         minSdkVersion min_sdk_version
         targetSdkVersion target_sdk_version
         versionCode version_code
@@ -30,7 +30,7 @@ dependencies {
     implementation "androidx.annotation:annotation:1.2.0"
     implementation "androidx.multidex:multidex:2.0.1"
     implementation 'com.yanzhenjie:permission:2.0.2'
-//    implementation project(':zxinglibrary')
-    implementation 'com.github.yuzhiqiang1993:zxing:2.2.9'
+    implementation project(':zxinglibrary')
+//    implementation 'com.github.yuzhiqiang1993:zxing:2.2.9'
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
 }

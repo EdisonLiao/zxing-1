@@ -1,4 +1,4 @@
-package com.yzq.zxing;
+package com.edison.qrcodes;
 
 import android.content.Intent;
 import android.os.Bundle;
