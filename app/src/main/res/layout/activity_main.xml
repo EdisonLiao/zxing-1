@@ -45,8 +45,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:text="@string/str_scan" />
+
+        <Button
+            android:id="@+id/diyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DIY QR Code"/>
 
         <FrameLayout
             android:id="@+id/fl_ad"

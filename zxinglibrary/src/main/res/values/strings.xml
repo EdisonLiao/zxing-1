@@ -13,5 +13,9 @@
     <string name="str_scan_result">Scan Result:</string>
     <string name="str_scan">Scan</string>
     <string name="str_copy_it">Has copied to clipboard</string>
+    <string name="str_qr_code">DIY QR Code</string>
+    <string name="str_qr_code_hint">Input text to DIY QR Code</string>
+    <string name="str_qr_code_get">Get QR Code</string>
+    <string name="str_qr_code_input_hint">Please input text</string>
 
 </resources>

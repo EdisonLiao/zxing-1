@@ -141,6 +141,7 @@ public class CaptureActivity extends AppCompatActivity implements SurfaceHolder.
         albumLayout = findViewById(R.id.albumLayout);
         albumLayout.setOnClickListener(this);
         bottomLayout = findViewById(R.id.bottomLayout);
+        findViewById(R.id.ll_qrcode).setOnClickListener(this);
 
 
         switchVisibility(bottomLayout, config.isShowbottomLayout());
@@ -334,6 +335,9 @@ public class CaptureActivity extends AppCompatActivity implements SurfaceHolder.
             startActivityForResult(intent, Constant.REQUEST_IMAGE);
         } else if (id == R.id.backIv) {
             finish();
+        }else if (id == R.id.ll_qrcode){
+            Intent intent = new Intent(this, DIYQRCodeActivity.class);
+            startActivity(intent);
         }
 
 

@@ -24,6 +24,7 @@ import com.google.android.gms.ads.nativead.NativeAd;
 import com.yanzhenjie.permission.AndPermission;
 import com.yanzhenjie.permission.runtime.Permission;
 import com.yzq.zxinglibrary.android.CaptureActivity;
+import com.yzq.zxinglibrary.android.DIYQRCodeActivity;
 import com.yzq.zxinglibrary.bean.ZxingConfig;
 import com.yzq.zxinglibrary.common.Constant;
 import com.yzq.zxinglibrary.income.AdMgr;
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         result = findViewById(R.id.result);
         scanBtn = findViewById(R.id.scanBtn);
+        findViewById(R.id.diyBtn).setOnClickListener(this);
         scanBtn.setOnClickListener(this);
         result.setOnClickListener(this);
         MobileAds.initialize(this);
@@ -136,6 +138,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     cm.setPrimaryClip(mClipData);
                     Toast.makeText(this,getString(R.string.str_copy_it),Toast.LENGTH_SHORT).show();
                 }
+                break;
+            case R.id.diyBtn:
+                Intent intent = new Intent(this, DIYQRCodeActivity.class);
+                startActivity(intent);
                 break;
         }
     }

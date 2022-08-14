@@ -9,4 +9,5 @@
     <string name="need_permission_toast">Please, We Need Permission</string>
     <string name="str_cancel">Cancel</string>
     <string name="str_ok">OK</string>
+
 </resources>
